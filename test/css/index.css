@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* 內减模式 */
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table; 
+  }
+  .clearfix:after {
+    clear:both;
+  }
+
+  .slider-bar{
+    position: absolute;
+    left: 50%;
+    top: 300px;
+    margin-left: 600px;
+    width: 45px;
+    height: 130x;
+    background-color: pink;
+   }
+
+
+  /* index.css用来美化首页 */
+body {
+    background-color:floralwhite;
+}
+  
+/* 版心 */
+ .wrapper{
+     width: 1200px;
+     margin: 0 auto;
+ }
+/* 头部 */
+ .header{
+    height: 42px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    float: left;
+}
+.header .search{
+        float: left;
+        margin-left: 250px;
+        width: 412px;
+        height: 40px;
+        border: 1px solid #00a4ff;
+}
+.search input{
+    float: left;
+    padding-left: 20px;
+    width: 360px;
+    height: 38px;
+    border: 0;
+}
+。search input::placeholder{
+    font-size: 14px;
+    color: #bfbfbf;
+} 
+
+.search button{
+    float: left;
+    width: 50px;
+    height: 40px;
+    background-image: url(../images/btn.png);
+    border: 0;
+}
+  /* 用户 */
+  .user{
+    float: right;
+    margin-right: 35px;
+    height: 42px;
+    line-height: 42px;
+}
+.user img{
+    vertical-align: middle;
+}
+
+/* 轮播 */
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+
+.banner .wrapper {
+    height: 420px;
+
+}
+
+.banner .left {
+    float: left;
+    padding: 0 20px;
+    width: 220px;
+    height: 420px;
+    background-color: rgba(0,0,0, 0.3);
+    line-height: 44px;
+}
+
+.banner .left span {
+    float: right;
+}
+
+.banner .left a {
+    display: block;
+    margin-top: 25px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.banner .left a:hover {
+    color: #00b4ff;
+}
+
+.bbb{
+          position: relative;
+    height: 420px;
+    margin: 0 auto;
+  
+    overflow: hidden;
+}
+
+.bbb ul  {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 600%;
+  
+}
+.bbb ul li {
+    float: left;
+}
+
+.prve,
+.next{
+    display: none;
+    position: absolute;
+    top: 210px;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0,0,0,0.2);
+    background-image: url(./images/sprites.png);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.prve{
+    left: 10px;
+    background-position: 14px -60px;
+}
+
+.next{
+    right: 10px;
+    background-position: -23px  -60px;
+}
+
+.bbb ol {
+    position: absolute;
+    left: 400px;
+    bottom: 30px;
+   
+    height: 10px;
+}
+
+.bbb ol li{
+    float: left;
+    margin-left: 24px;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.bbb ol .current{
+    background-color: #fff;
+}
+
+
+/* 导航 */
+.nav{
+    margin-top: 30px;
+}
+
+
+.nav h2{
+    float: left;
+    font-size: 35px;
+    color: #000;
+}
+.nav ul{
+    float: left;
+    margin-left: 50px;
+    font-size: 30px;
+
+}
+.nav li {
+    float: left;
+}
+
+/* 内容 */
+.box {
+    margin-top: 35px;
+}
+
+.box .title {
+    height: 40px;
+}
+
+.box .title h2 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+}
+
+.box .title a {
+    float: right;
+    margin-right: 30px;
+    font-size: 20px;
+    color: #a5a5a5;
+}
+
+.box .content li {
+    float: left;
+    margin-right: 15px; 
+    margin-bottom: 15px;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+}
+
+.box .content li:nth-child(5n) {
+    margin-right: 0;
+}
+
+.box .content li h3 {
+    padding: 20px;
+    font-size: 16px;
+    color: #050505;
+    text-align: center;
+}
+
+.box .content li p {
+    padding: 0 20px;
+    font-size: 17px;
+    color: #0f0f0f;
+}
+
+/* 结尾 */
+.footer {
+    margin-top: 40px;
+
+    padding-top: 30px;
+
+    height: 417px;
+    background-color: pink;
+}
+
+
+.footer  p {
+    margin: 20px 0 10px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
